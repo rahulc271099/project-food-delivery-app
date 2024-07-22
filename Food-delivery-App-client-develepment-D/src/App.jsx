@@ -6,8 +6,15 @@ import Restaurant from "./Pages/RestaurantsPage/Restaurant";
 import PopularProduct from "./Pages/ProductsPage/PopularProduct";
 import CartPage from "./Pages/CartPage/CartPage";
 import SettingsPage from "./Pages/SettingsPage/SettingsPage";
-
+import LoginModal from "./Components/Modal/Authentication/login";
+import { USER_KEY } from "./utils/constants";
 function App() {
+
+  const user = window.localStorage.getItem(USER_KEY);
+  const isAuth = user ? JSON.parse(user).isAuth : false;
+  if(!isAuth){
+    
+  }
   return (
     <>
       <Routes>

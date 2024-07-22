@@ -16,7 +16,7 @@ const Layout = ({ children, title, description, keywords, author }) => {
             </Helmet>
             <div className="Pages">
                 {children}
-                <FooterMenu />
+                <FooterMenu />  
             </div>
         </div>
     )
